@@ -12,9 +12,7 @@ public class Main {
         int minRider = 12;
         int numberOfLi1Type = 860;
 
-        double simple = 1.5;
-
-        int numberOfMin1Type = (int) (numberOfLi1Type * simple);
+        int numberOfMin1Type = (int) (numberOfLi1Type * 1.5);
 
 
         int generalIndicatorOfLi = (numberOfLi1Type * liWarrior)+(numberOfLi1Type * liBowman)+(numberOfLi1Type * liRider);
