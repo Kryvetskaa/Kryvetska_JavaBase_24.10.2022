@@ -12,8 +12,8 @@ public class Main {
 
         System.out.println("Please, enter the number of frags for the 1st player:");
         if (scanner.hasNextInt()) {
-            int number = scanner.nextInt(); System.out.println(number);
-        }else {
+            System.out.println(" ");
+        } else {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
@@ -22,8 +22,8 @@ public class Main {
 
         System.out.println("Please, enter the number of frags for the 2nd player:");
         if (scanner.hasNextInt()) {
-            int number = scanner.nextInt(); System.out.println(number);
-        }else {
+            System.out.println(" ");
+        } else {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
@@ -32,8 +32,8 @@ public class Main {
 
         System.out.println("Please, enter the number of frags for the 3d player:");
         if (scanner.hasNextInt()) {
-            int number = scanner.nextInt(); System.out.println(number);
-        }else {
+            System.out.println(" ");
+        } else {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
@@ -42,8 +42,8 @@ public class Main {
 
         System.out.println("Please, enter the number of frags for the 4th player:");
         if (scanner.hasNextInt()) {
-            int number = scanner.nextInt(); System.out.println(number);
-        }else {
+            System.out.println(" ");
+        } else {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
@@ -52,8 +52,8 @@ public class Main {
 
         System.out.println("Please, enter the number of frags for the 5th player:");
         if (scanner.hasNextInt()) {
-            int number = scanner.nextInt(); System.out.println(number);
-        }else {
+            System.out.println(" ");
+        } else {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
@@ -68,8 +68,8 @@ public class Main {
 
         System.out.println("Please, enter the number of frags for the 1st player:");
         if (scanner.hasNextInt()) {
-            int number = scanner.nextInt(); System.out.println(number);
-        }else {
+            System.out.println(" ");
+        } else {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
@@ -78,8 +78,8 @@ public class Main {
 
         System.out.println("Please, enter the number of frags for the 2nd player:");
         if (scanner.hasNextInt()) {
-            int number = scanner.nextInt(); System.out.println(number);
-        }else {
+            System.out.println(" ");
+        } else {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
@@ -88,8 +88,8 @@ public class Main {
 
         System.out.println("Please, enter the number of frags for the 3d player:");
         if (scanner.hasNextInt()) {
-            int number = scanner.nextInt(); System.out.println(number);
-        }else {
+            System.out.println(" ");
+        } else {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
@@ -98,8 +98,8 @@ public class Main {
 
         System.out.println("Please, enter the number of frags for the 4th player:");
         if (scanner.hasNextInt()) {
-            int number = scanner.nextInt(); System.out.println(number);
-        }else {
+            System.out.println(" ");
+        } else {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
@@ -108,8 +108,8 @@ public class Main {
 
         System.out.println("Please, enter the number of frags for the 5th player:");
         if (scanner.hasNextInt()) {
-            int number = scanner.nextInt(); System.out.println(number);
-        }else {
+            System.out.println(" ");
+        } else {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
@@ -124,19 +124,21 @@ public class Main {
         double result2 = ((double) name01 + name02 + name03 + name04 + name05)/5;
 
 
-        System.out.println("Arithmetic average for" + " " + teamName1 + ":" + result1);
-        System.out.println("Arithmetic average for" + " " + teamName2 + ":" + result2);
+        System.out.println("Arithmetic average for" + " " + teamName1 + " " + ":" + " " + result1);
+        System.out.println("Arithmetic average for" + " " + teamName2 + " " + ":" + " " + result2);
 
         double a = result1;
         double b = result2;
 
         if (a > b) {
-            System.out.println("Перемогла команда" + " " + teamName1 + " " + "набрала" + " " + result1 + "очків");
+            System.out.println("Team " + " " + teamName1 + " " + "won" + "     " + "it scored" + " " + result1 + " " + "points" );
         } else if (a < b) {
-            System.out.println("Перемогла команда" + " " + teamName2 + " " + "набрала" + " " + result2 + "очків");
+            System.out.println("Team " + teamName2 + " " + "won" + "     " + "it scored" + " " + result2 + " " + "points" );
         } else if (a == b) {
-            System.out.println("Перемогла дружба");
+            System.out.println("Friendship won");
         }
+
+
 
 
 
