@@ -131,11 +131,11 @@ public class Main {
         double b = result2;
 
         if (a > b) {
-            System.out.println("Team " + " " + teamName1 + " " + "won" + "     " + "it scored" + " " + result1 + " " + "points" );
+            System.out.println("Team " + " " + teamName1 + " " + "has won" + "     " + "it scored" + " " + result1 + " " + "points" );
         } else if (a < b) {
-            System.out.println("Team " + teamName2 + " " + "won" + "     " + "it scored" + " " + result2 + " " + "points" );
+            System.out.println("Team " + teamName2 + " " + "has won" + "     " + "it scored" + " " + result2 + " " + "points" );
         } else if (a == b) {
-            System.out.println("Friendship won");
+            System.out.println("Friendship has won");
         }
 
 
