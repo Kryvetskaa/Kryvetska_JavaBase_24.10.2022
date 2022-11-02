@@ -17,7 +17,7 @@ public class Main {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
-        int name1  = scanner.nextInt();
+        int number1  = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Please, enter the number of frags for the 2nd player:");
@@ -27,7 +27,7 @@ public class Main {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
-        int name2  = scanner.nextInt();
+        int number2  = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Please, enter the number of frags for the 3d player:");
@@ -37,7 +37,7 @@ public class Main {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
-        int name3  = scanner.nextInt();
+        int number3  = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Please, enter the number of frags for the 4th player:");
@@ -47,7 +47,7 @@ public class Main {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
-        int name4  = scanner.nextInt();
+        int number4  = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Please, enter the number of frags for the 5th player:");
@@ -57,7 +57,7 @@ public class Main {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
-        int name5  = scanner.nextInt();
+        int number5  = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println();
@@ -73,7 +73,7 @@ public class Main {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
-        int name01  = scanner.nextInt();
+        int number01  = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Please, enter the number of frags for the 2nd player:");
@@ -83,7 +83,7 @@ public class Main {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
-        int name02  = scanner.nextInt();
+        int number02  = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Please, enter the number of frags for the 3d player:");
@@ -93,7 +93,7 @@ public class Main {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
-        int name03  = scanner.nextInt();
+        int number03  = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Please, enter the number of frags for the 4th player:");
@@ -103,7 +103,7 @@ public class Main {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
-        int name04  = scanner.nextInt();
+        int number04  = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Please, enter the number of frags for the 5th player:");
@@ -113,15 +113,15 @@ public class Main {
             System.out.println("Wrong data! Restart application");
             System.exit(0);
         }
-        int name05  = scanner.nextInt();
+        int number05  = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println();
         System.out.println();
 
 
-        double result1 = ((double) name1 + name2 + name3 + name4 + name5)/5;
-        double result2 = ((double) name01 + name02 + name03 + name04 + name05)/5;
+        double result1 = ((double) number1 + number2 + number3 + number4 + number5)/5;
+        double result2 = ((double) number01 + number02 + number03 + number04 + number05)/5;
 
 
         System.out.println("Arithmetic average for" + " " + teamName1 + " " + ":" + " " + result1);
