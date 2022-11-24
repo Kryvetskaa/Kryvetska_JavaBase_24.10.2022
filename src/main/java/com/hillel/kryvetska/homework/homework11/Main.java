@@ -7,25 +7,43 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        int n;
-        int m;
+        System.out.println("Please, enter two positive numbers:");
 
+        int n;
         while (true) {
+            System.out.println("the 1st one:");
             if (scanner.hasNextInt()) {
                 n = scanner.nextInt();
-                System.out.println(" ");
-                break;
+                System.out.println("");
+                scanner.nextLine();
+                if (n >= 1) {
+                    System.out.println("accepted");
+                    break;
+                } else {
+                    System.out.println("You entered negative number, try again");
+                }
             } else {
                 System.out.println("Wrong data, try again!");
                 scanner.nextLine();
             }
         }
 
+        System.out.println();
+        System.out.println();
+
+        int m;
         while (true) {
+            System.out.println("the 2nd one:");
             if (scanner.hasNextInt()) {
                 m = scanner.nextInt();
-                System.out.println(" ");
-                break;
+                System.out.println("");
+                scanner.nextLine();
+                if (m >= 1) {
+                    System.out.println("accepted");
+                    break;
+                } else {
+                    System.out.println("You entered negative number, try again");
+                }
             } else {
                 System.out.println("Wrong data, try again!");
                 scanner.nextLine();
@@ -41,6 +59,9 @@ public class Main {
             }
         }
 
+        System.out.println();
+        System.out.println();
+
         System.out.println("Before:");
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
@@ -54,6 +75,9 @@ public class Main {
                 array2[i][j] = array[j][i];
             }
         }
+
+        System.out.println();
+        System.out.println();
 
         System.out.println("After:");
         for (int i = 0; i < array2.length; i++) {
