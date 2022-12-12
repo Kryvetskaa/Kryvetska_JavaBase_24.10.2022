@@ -3,66 +3,86 @@ package com.hillel.kryvetska.homework.homework14;
 import java.util.Scanner;
 
 public class Information {
+
         Scanner scanner = new Scanner(System.in);
         private String firstName = firstName(scanner);
-        public String lastName = getLine2(scanner);
+        private String lastName = lastName(scanner);
         private int day = day(scanner);
         private int month = month(scanner);
         private int year = year(scanner);
         private String email = email(scanner);
         private int number = number(scanner);
-        public int weight = getNumber5(scanner);
-        public int pressure = getNumber6(scanner);
-        public int steps = getNumber7(scanner);
+        private int weight = weight(scanner);
+        private int pressure = pressure(scanner);
+        private int steps = steps(scanner);
+        private int age = age();
 
-        public static void printAccountInfo() {
-                Information Information = new Information();
-                System.out.println(Information);
+
+
+        public void printAccountInfo() {
+//                Information Information = new Information();
+//                String firstName = Information.getFirstName();
+                System.out.println("First name: " + firstName);
+                System.out.println("Last name: " + lastName);
+                System.out.println("Birth day: " + day);
+                System.out.println("Birth month: " + month);
+                System.out.println("Birth year: " + year);
+                System.out.println("Age: " + age);
+                System.out.println("Email: " + email);
+                System.out.println("Phone number: " + number);
+                System.out.println("Weight: " + weight);
+                System.out.println("Blood pressure: " + pressure);
+                System.out.println("Number of steps: " + steps);
+
+
+
         }
 
         public Information () {
                 this.firstName = getFirstName();
-                this.lastName = lastName;
+                this.lastName = getLastName();
                 this.day = getDay();
                 this.month = getMonth();
                 this.year = getYear();
                 this.email = getEmail();
                 this.number = getNumber();
-                this.weight = weight;
-                this.pressure = pressure;
-                this.steps = steps;
+                this.weight = getWeight();
+                this.pressure = getPressure();
+                this.steps = getSteps();
         }
 
         public Information (String firstName, String lastName,
                             int day, int month, int year,
                             String email, int number, int weight,
-                            int pressure, int steps ) {
+                            int pressure, int steps, int age) {
                 this.firstName = firstName(scanner);
-                this.lastName = getLine2(scanner);
+                this.lastName = lastName(scanner);
                 this.day = day(scanner);
                 this.month = month(scanner);
                 this.year = year(scanner);
                 this.email = email(scanner);
                 this.number = number(scanner);
-                this.weight = getNumber5(scanner);
-                this.pressure = getNumber6(scanner);
-                this.steps = getNumber7(scanner);
+                this.weight = weight(scanner);
+                this.pressure = pressure(scanner);
+                this.steps = steps(scanner);
+                this.age = getAge();
 
         }
 
         public String getFirstName(){
                 return this.firstName;
         }
-        public void setFirstName (String name){
-                this.firstName = firstName;
-        }
+//        public void setFirstName (String name){
+//                this.firstName = firstName;
+//        }
         static String firstName (Scanner scanner) {
                 String firstName;
                 System.out.println("Please enter your first name");
                 while (true) {
                         if (scanner.hasNextLine()) {
                                 firstName = scanner.nextLine();
-                                return firstName ;
+                                return firstName;
+
                         } else {
                                 System.out.println("Wrong data, try again");
                                 scanner.nextLine();
@@ -70,8 +90,14 @@ public class Information {
                 }
         }
 
+        public String getLastName(){
+                return this.lastName;
+        }
+        public void setLastName (String name){
+                this.lastName = lastName;
+        }
 
-        static String getLine2 (Scanner scanner) {
+        static String lastName (Scanner scanner) {
                 String lastName;
                 System.out.println("Please enter your last name");
                 while (true) {
@@ -88,9 +114,9 @@ public class Information {
         public int getDay(){
                 return this.day;
         }
-        public void setDay (){
-                this.day = day;
-        }
+//        public void setDay (){
+//                this.day = day;
+//        }
         static int day (Scanner scanner) {
                 int day = 0;
                 System.out.println("Please enter your birth day");
@@ -114,9 +140,9 @@ public class Information {
         public int getMonth(){
                 return this.month;
         }
-        public void setMonth (){
-                this.month = month;
-        }
+//        public void setMonth (){
+//                this.month = month;
+//        }
         static int month (Scanner scanner) {
                 int month = 0;
                 System.out.println("Please enter your birth month");
@@ -140,9 +166,9 @@ public class Information {
         public int getYear(){
                 return this.year;
         }
-        public void setYear (){
-                this.year = year;
-        }
+//        public void setYear (){
+//                this.year = year;
+//        }
         static int year (Scanner scanner) {
                 int year = 0;
                 System.out.println("Please enter your birth year");
@@ -159,23 +185,35 @@ public class Information {
                                 System.out.println("Wrong data, try again");
                                 scanner.nextLine();
                         }
-                }
+                } scanner.nextLine();
                 return year;
+
+        }
+
+        public int getAge(){
+                return this.age;
+        }
+//        public void setAge (){
+//                this.age = age;
+//        }
+        int age() {
+                int age = 2020 - year;
+                return age;
         }
 
         public String getEmail(){
                 return this.email;
         }
-        public void setEmail (String name){
-                this.email = email;
-        }
+//        public void setEmail (String name){
+//                this.email = email;
+//        }
         static String email (Scanner scanner) {
                 String email;
                 System.out.println("Please enter your email");
                 while (true) {
                         if (scanner.hasNextLine()) {
                                 email = scanner.nextLine();
-                                return email;
+                                return email ;
                         } else {
                                 System.out.println("Wrong data, try again");
                                 scanner.nextLine();
@@ -186,9 +224,9 @@ public class Information {
         public int getNumber(){
                 return this.number;
         }
-        public void setNumber (){
-                this.number = number;
-        }
+//        public void setNumber (){
+//                this.number = number;
+//        }
         static int number (Scanner scanner) {
                 int number = 0;
                 System.out.println("Please enter your phone number");
@@ -208,8 +246,13 @@ public class Information {
                 }
                 return number;
         }
-
-        static int getNumber5(Scanner scanner) {
+        public int getWeight(){
+                return this.weight;
+        }
+        public void setWeight (int weight){
+                this.weight = weight;
+        }
+        static int weight(Scanner scanner) {
                 int weight = 0;
                 System.out.println("Please enter your weight");
                 while (true) {
@@ -228,8 +271,13 @@ public class Information {
                 }
                 return weight;
         }
-
-        static int getNumber6(Scanner scanner) {
+        public int getPressure(){
+                return this.pressure;
+        }
+        public void setPressure (int pressure){
+                this.pressure = pressure;
+        }
+        static int pressure(Scanner scanner) {
                 int pressure = 0;
                 System.out.println("Please enter your blood pressure");
                 while (true) {
@@ -249,7 +297,13 @@ public class Information {
                 return pressure;
         }
 
-        static int getNumber7(Scanner scanner) {
+        public int getSteps(){
+                return this.steps;
+        }
+        public void setSteps (int steps){
+                this.steps = steps;
+        }
+        static int steps(Scanner scanner) {
                 int steps = 0;
                 System.out.println("Please enter the number of steps");
                 while (true) {
