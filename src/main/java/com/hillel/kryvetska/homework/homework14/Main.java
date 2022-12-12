@@ -4,21 +4,32 @@ public class Main  {
     public static void main(String[] args) {
 
 
-        Information Information = new Information ();
-        Information.setWeight(96);
-        Information.setSteps(3600);
-        Information.printAccountInfo();
+                Information Information = new Information (null, null,
+                                                            0,0,0,null,
+                                                            0,0,0,0);
+                Information.setLastName("Хэйл");
+                Information.setSteps(25000);
+                Information.printAccountInfo();
 
-        Information Information2 = new Information ();
-        Information2.printAccountInfo();
+                Information Information2 = new Information (null,null,
+                                                            0,0,0,null,
+                                                            0, 0,0,0);
+                Information2.setLastName("МакКолл");
+                Information2.setSteps(3000);
+                Information2.printAccountInfo();
 
-        Information Information3 = new Information ();
-        Information3.setLastName("Smirnov");
-        Information3.setPressure(160);
-        Information3.printAccountInfo();
+                Information Information3 = new Information (null,null,
+                                                            0,0,0,null,
+                                                            0, 0,0,0);
+                Information3.printAccountInfo();
 
-        Information Information4 = new Information ();
-        Information4.printAccountInfo();
+
+                Information Information4 = new Information (null,null,
+                                                            0,0,0,null,
+                                                            0, 0,0,0);
+                Information4.printAccountInfo();
+
+
 
 
 
