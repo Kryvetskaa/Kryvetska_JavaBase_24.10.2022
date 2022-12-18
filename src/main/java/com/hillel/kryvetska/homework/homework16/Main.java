@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         MusicStyles[] musicStyles = {
-                new PopMusic("Pops Band"),
+                new PopMusic("Pop Band"),
                 new RockMusic("Rock Band"),
                 new ClassicMusic("Classic Band")
         };
