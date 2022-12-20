@@ -15,11 +15,11 @@ public class Drinks {
     public static final int COCA_COLA_PRICE = 20;
 
 
-//    DrinksMachine transportType = null;
 
-    Scanner scanner = new Scanner(System.in);
 
-        public String coffeePrepare(){
+    static Scanner scanner = new Scanner(System.in);
+
+        public static String coffeePrepare(){
         System.out.println("A cup of coffee costs : " + COFFEE_PRICE + "грн");
         int cups;
         while (true) {
@@ -32,15 +32,14 @@ public class Drinks {
                     System.out.println("Please enter positive number");
                 }
             } else {
-                System.out.println("Wrong data, please enter integer");
+                System.out.println("Wrong data, please try again");
                 scanner.nextLine();
             }
         }
-            return "You choosed coffee. " + "it costs: " + cups * COFFEE_PRICE + " for " + cups + " cups";
+            return "You chose coffee. " + "it costs: " + cups * COFFEE_PRICE + " for " + cups + " cups";
         }
 
-
-        public String teaPrepare(){
+        public static String teaPrepare(){
         System.out.println("A cup of tea costs : " + TEA_PRICE + "грн");
         int cups;
         while (true) {
@@ -53,15 +52,15 @@ public class Drinks {
                     System.out.println("Please enter positive number");
                 }
             } else {
-                System.out.println("Wrong data, please enter integer");
+                System.out.println("Wrong data, please try again");
                 scanner.nextLine();
             }
         }
-            return "You choosed tea. " + "to pay: " + cups * TEA_PRICE + " for " + cups + " cups";
+            return "You chose tea. " + "to pay: " + cups * TEA_PRICE + " for " + cups + " cups";
     }
 
 
-    public String lemonadePrepare(){
+    public static String lemonadePrepare(){
         System.out.println("A cup of lemonade costs : " + LEMONADE_PRICE + "грн");
         int cups;
         while (true) {
@@ -74,16 +73,16 @@ public class Drinks {
                     System.out.println("Please enter positive number");
                 }
             } else {
-                System.out.println("Wrong data, please enter integer");
+                System.out.println("Wrong data, please try again");
                 scanner.nextLine();
             }
         }
-        return "You choosed lemonade. " + "to pay: " + cups * LEMONADE_PRICE + " for " + cups + " cups";
+        return "You chose lemonade. " + "to pay: " + cups * LEMONADE_PRICE + " for " + cups + " cups";
 
     }
 
 
-    public String mojitoPrepare(){
+    public static String mojitoPrepare(){
             System.out.println("A cup of mojito costs : " + MOJITO_PRICE + "грн");
         int cups;
         while (true) {
@@ -96,16 +95,16 @@ public class Drinks {
                     System.out.println("Please enter positive number");
                 }
             } else {
-                System.out.println("Wrong data, please enter integer");
+                System.out.println("Wrong data, please try again");
                 scanner.nextLine();
             }
         }
-        return "You choosed mojito. " + "to pay: " + cups * MOJITO_PRICE + " for " + cups + " cups";
+        return "You chose mojito. " + "to pay: " + cups * MOJITO_PRICE + " for " + cups + " cups";
 
     }
 
 
-    public String waterPrepare(){
+    public static String waterPrepare(){
         System.out.println("A cup of mineral water costs : " + MINERAL_WATER_PRICE + "грн");
         int cups;
         while (true) {
@@ -118,16 +117,16 @@ public class Drinks {
                     System.out.println("Please enter positive number");
                 }
             } else {
-                System.out.println("Wrong data, please enter integer");
+                System.out.println("Wrong data, please try again");
                 scanner.nextLine();
             }
         }
-        return "You choosed mineral water. " + "to pay: " + cups * MINERAL_WATER_PRICE + " for " + cups + " cups";
+        return "You chose mineral water. " + "to pay: " + cups * MINERAL_WATER_PRICE + " for " + cups + " cups";
 
     }
 
 
-    public String cocaColaPrepare(){
+    public static String cocaColaPrepare(){
         System.out.println("A cup of coca cola costs : " + COCA_COLA_PRICE + "грн");
         int cups;
         while (true) {
@@ -140,14 +139,15 @@ public class Drinks {
                     System.out.println("Please enter positive number");
                 }
             } else {
-                System.out.println("Wrong data, please enter integer");
+                System.out.println("Wrong data, please try again");
                 scanner.nextLine();
             }
         }
-        return "You choosed coca cola. " + "to pay: " + cups * COCA_COLA_PRICE + " for " + cups + " cups";
+        return "You chose coca cola. " + "to pay: " + cups * COCA_COLA_PRICE + " for " + cups + " cups";
 
     }
 
 
 
 }
+
