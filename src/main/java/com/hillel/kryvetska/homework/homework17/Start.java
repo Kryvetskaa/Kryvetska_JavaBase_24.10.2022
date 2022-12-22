@@ -8,6 +8,8 @@ public class Start extends Drinks{
         DrinksMachine[] drinkType = DrinksMachine.values();
         DrinksMachine userType = null;
 
+
+
         Scanner scanner = new Scanner(System.in);
         String drink;
         while (true) {
@@ -17,6 +19,7 @@ public class Start extends Drinks{
                 for (DrinksMachine drinksMachine : drinkType) {
                     if (drink.equals(drinksMachine.toString())) {
                         userType = DrinksMachine.valueOf(drink);
+//                        totalSum = DrinksMachine.valueOf(drink).getPrice();
                         break;
                     }
                 }
@@ -27,26 +30,31 @@ public class Start extends Drinks{
                 }
             }
 
-//            Drinks drinks = new Drinks();
 
             DrinksMachine drinksMachine = DrinksMachine.valueOf(drink);//выбор напитка
             switch (drinksMachine) {
                 case COFFEE:
+//                    totalSum = cups * DrinksMachine.COFFEE.getPrice();
                     System.out.println(coffeePrepare());
                     break;
                 case TEA:
+//                    totalSum = cups * DrinksMachine.TEA.getPrice();
                     System.out.println(teaPrepare());
                     break;
                 case LEMONADE:
+//                    totalSum = cups * DrinksMachine.LEMONADE.getPrice();
                     System.out.println(lemonadePrepare());
                     break;
                 case MOJITO:
+//                    totalSum = cups * DrinksMachine.MOJITO.getPrice();
                     System.out.println(mojitoPrepare());
                     break;
                 case MINERAL_WATER:
+//                    totalSum = cups * DrinksMachine.MINERAL_WATER.getPrice();
                     System.out.println(waterPrepare());
                     break;
                 case COCA_COLA:
+//                    totalSum = cups * DrinksMachine.COCA_COLA.getPrice();
                     System.out.println(cocaColaPrepare());
                     break;
                 default:
@@ -58,5 +66,6 @@ public class Start extends Drinks{
 
         }
 
+//        return totalSum;
     }
 }
